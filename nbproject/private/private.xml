@@ -4,9 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/javafxapplication1/JavaFXApplication1.java</file>
-            <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/controllers/ScenesController.java</file>
+            <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/controllers/RegisterViewController.java</file>
             <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/controllers/LoginViewController.java</file>
-            <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/gui/loader/ViewLoader.java</file>
+            <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/gui/room/RoomView.fxml</file>
+            <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/gui/room/roomview.css</file>
+            <file>file:/C:/Users/dione/Documents/NetBeansProjects/JavaFXApplication1/src/controllers/RoomViewController.java</file>
         </group>
     </open-files>
 </project-private>

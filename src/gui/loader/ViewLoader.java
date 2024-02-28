@@ -15,9 +15,9 @@ public class ViewLoader {
         try {
             fxmlLogin = FXMLLoader.load(getClass().getResource("/gui/login/LoginView.fxml"));
             fxmlRegister = FXMLLoader.load(getClass().getResource("/gui/register/RegisterView.fxml"));
-            fxmlRoom = FXMLLoader.load(getClass().getResource("/gui/chat/RoomView.fxml"));
+            fxmlRoom = FXMLLoader.load(getClass().getResource("/gui/room/RoomView.fxml"));
         } catch (IOException ex) {
-            Logger.getLogger(ViewLoader.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ViewLoader.class.getName()).log(Level.SEVERE, null,ex);
         }
     }
     

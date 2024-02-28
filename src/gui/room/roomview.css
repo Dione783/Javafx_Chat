@@ -5,7 +5,7 @@
    -fx-background-color: "blue";
    -fx-text-fill: "white";
 }
-#registrar{
-    -fx-text-fill:"black";
-    -fx-underline: true;
+#messageList{
+    -fx-background-color: "#54148c";
+    -fx-border-color: "black";
 }

@@ -1,0 +1,11 @@
+#AnchorPane{
+    -fx-background-color: "#7e21ce";
+}
+#btn{
+   -fx-background-color: "blue";
+   -fx-text-fill: "white";
+}
+#registrar{
+    -fx-text-fill:"black";
+    -fx-underline: true;
+}

@@ -20,11 +20,11 @@ public class LoginViewController implements Initializable {
     
     public void btnActionEnter(){
         //se a senha e nome existirem no banco de dados permitir entrada
-        //JavaFXApplication1.sc.setScene("Room");
+        ScenesLoader.loadNextScene("Room");
     }
     
     public void btnActionRegister(){
-        //JavaFXApplication1.sc.setScene("Register");
+        ScenesLoader.loadNextScene("Register");
     }
 
     @Override

@@ -41,7 +41,17 @@ public class ScenesLoader {
         styles = new StyleLoader();
     }
     
-    public static void loadNextScene(){
-        
+    public static void loadNextScene(String scene){
+        switch(scene){
+            case "Login":
+            stage.setScene(loginScene.getScene());
+                break;
+            case "Register":
+                stage.setScene(registerScene.getScene());
+                break;
+            case "Room":
+                stage.setScene(roomScene.getScene());
+                break;
+        }
     }
 }

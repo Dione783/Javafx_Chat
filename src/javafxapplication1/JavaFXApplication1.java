@@ -8,7 +8,6 @@ public class JavaFXApplication1 extends Application {
     
     @Override
     public void start(Stage stage) {
-        //sc = new ScenesController(stage);
         ScenesLoader.loadAllSources();
     }
     

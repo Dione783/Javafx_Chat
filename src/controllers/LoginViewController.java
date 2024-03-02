@@ -7,7 +7,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafxapplication1.JavaFXApplication1;
 
 public class LoginViewController implements Initializable {
     @FXML
@@ -21,11 +20,11 @@ public class LoginViewController implements Initializable {
     
     public void btnActionEnter(){
         //se a senha e nome existirem no banco de dados permitir entrada
-        JavaFXApplication1.sc.setScene("Room");
+        //JavaFXApplication1.sc.setScene("Room");
     }
     
     public void btnActionRegister(){
-        JavaFXApplication1.sc.setScene("Register");
+        //JavaFXApplication1.sc.setScene("Register");
     }
 
     @Override

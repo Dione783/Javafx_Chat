@@ -1,16 +1,15 @@
 package javafxapplication1;
 
-import controllers.ScenesController;
+import controllers.ScenesLoader;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class JavaFXApplication1 extends Application {
-    public static ScenesController sc;
     
     @Override
     public void start(Stage stage) {
-        System.out.println("Path"+this.getClass());
-        sc = new ScenesController(stage);
+        //sc = new ScenesController(stage);
+        ScenesLoader.loadAllSources();
     }
     
     public static void main(String[] args) {

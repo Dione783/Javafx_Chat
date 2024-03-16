@@ -8,7 +8,16 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApplication1.jar" size="11912" download="eager" />
+    <jar href="JavaFXApplication1.jar" size="14501" download="eager" />
+    <jar href="lib\javafx-swt.jar" size="36882" download="eager" />
+    <jar href="lib\javafx.base.jar" size="753826" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2585130" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="130176" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4281782" download="eager" />
+    <jar href="lib\javafx.media.jar" size="277279" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="89703" download="eager" />
+    <jar href="lib\javafx.web.jar" size="727735" download="eager" />
+    <jar href="lib\mysql-connector-j-8.3.0.jar" size="2495536" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="javafxapplication1.JavaFXApplication1"  name="JavaFXApplication1" />
   <update check="always"/>

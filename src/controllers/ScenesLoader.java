@@ -17,8 +17,8 @@ public class ScenesLoader {
     private static Stage stage;
     private static ViewLoader views;
     
-    public static void loadAllSources(){
-        ScenesLoader.stage = new Stage();
+    public static void loadAllSources(Stage stage){
+        ScenesLoader.stage = stage;
         stage.setTitle("Chat Application");
         loadViews();
         loadStyles();

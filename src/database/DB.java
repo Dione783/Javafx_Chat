@@ -8,8 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class DB {
     private static Connection connection;
@@ -18,7 +16,7 @@ public class DB {
         if(connection == null){
             try {
                 Properties props = loadProperties();
-                String url = props.getProperty("url");
+                String url = props.getProperty("dburl");
                 connection = DriverManager.getConnection(url,props);
             } catch (SQLException ex) {
                throw new DBException(ex.getMessage());
@@ -46,7 +44,6 @@ public class DB {
                 throw new DBException(ex.getMessage());
             }
         }
-
     }
     
     public static void closeResultSet(ResultSet rs){
@@ -54,7 +51,7 @@ public class DB {
             try {
                 rs.close();
             } catch (SQLException ex) {
-                Logger.getLogger(DB.class.getName()).log(Level.SEVERE, null, ex);
+                throw new DBException(ex.getMessage());
             }
         }
     }

@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import services.UserService;
 
 public class LoginViewController implements Initializable {
     @FXML
@@ -20,7 +21,9 @@ public class LoginViewController implements Initializable {
     
     public void btnActionEnter(){
         //se a senha e nome existirem no banco de dados permitir entrada
-        ScenesLoader.loadNextScene("Room");
+        if(UserService.verifyUser(nome.getText(),senha.getText())){
+            ScenesLoader.loadNextScene("Room");
+        }
     }
     
     public void btnActionRegister(){

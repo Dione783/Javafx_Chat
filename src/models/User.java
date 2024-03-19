@@ -1,10 +1,15 @@
 package models;
 
+import java.util.List;
+
 public class User{
     private String nome;
     private String password;
+    private int id;
+    private List<Room> rooms;
     
-    public User(String nome,String password){
+    public User(int id,String nome,String password){
+        this.id=id;
         this.nome=nome;
         this.password=password;
     }
@@ -16,5 +21,4 @@ public class User{
     public String getPassword() {
         return password;
     }
-    
 }

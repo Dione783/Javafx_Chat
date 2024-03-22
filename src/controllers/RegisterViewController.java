@@ -24,6 +24,7 @@ public class RegisterViewController implements Initializable {
     
     public void registerUser(){
         UserService.registerUser(name.getText(),password.getText());
+        ScenesLoader.loadNextScene("Login");
     }
     
 }

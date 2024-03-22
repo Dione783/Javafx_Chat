@@ -1,5 +1,10 @@
 package gui.loader;
 
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
+
 public class StyleLoader {
     private StyleSource LoginCss;
     private StyleSource RegisterCss;

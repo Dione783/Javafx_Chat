@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.media.AudioClip;
 import services.UserService;
 
 public class LoginViewController implements Initializable {
@@ -22,6 +23,8 @@ public class LoginViewController implements Initializable {
     public void btnActionEnter(){
         //se a senha e nome existirem no banco de dados permitir entrada
         if(UserService.verifyUser(nome.getText(),senha.getText())){
+            UserService.getUserRooms();
+            UserService.getMessages();
             ScenesLoader.loadNextScene("Room");
         }
     }
@@ -32,6 +35,7 @@ public class LoginViewController implements Initializable {
 
     @Override
     public void initialize(URL url,ResourceBundle res) {
-        
+        AudioClip sound = new AudioClip(this.getClass().getResource("/sounds/music.mp3").toExternalForm());
+        sound.play();
     }
 }

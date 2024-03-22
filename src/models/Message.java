@@ -2,6 +2,22 @@ package models;
 
 public class Message {
     private int MessageId;
+
+    public int getMessageId() {
+        return MessageId;
+    }
+
+    public int getRoomId() {
+        return RoomId;
+    }
+
+    public int getSenderId() {
+        return SenderId;
+    }
+
+    public String getContent() {
+        return content;
+    }
     private int RoomId;
     private int SenderId;
     private String content;

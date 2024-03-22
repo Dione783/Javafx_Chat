@@ -6,6 +6,9 @@ package controllers;
 
 import gui.loader.StyleLoader;
 import gui.loader.ViewLoader;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 public class ScenesLoader {
@@ -19,7 +22,7 @@ public class ScenesLoader {
     
     public static void loadAllSources(Stage stage){
         ScenesLoader.stage = stage;
-        stage.setTitle("Chat Application");
+        stage.setTitle("Chat Application");        
         loadViews();
         loadStyles();
         loadScenes();

@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class JavaFXApplication1 extends Application {
     
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage) {        
         Connection conn = null;
         ScenesLoader.loadAllSources(stage);
     }

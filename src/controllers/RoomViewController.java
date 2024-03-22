@@ -22,7 +22,7 @@ public class RoomViewController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        items = FXCollections.observableArrayList ();
+        items = FXCollections.observableArrayList();
     }
     
     public void sendMessage(){

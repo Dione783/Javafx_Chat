@@ -1,11 +1,21 @@
-#AnchorPane{
-    -fx-background-color: "#7e21ce";
+@font-face{
+    font-family: "Chalkduster";
+    src: url("../fonts/Chalkduster.ttf");
+}
+.mainFxmlClass {
+    -fx-font-family: 'Chalkduster';
+}
+AnchorPane{
+    -fx-background-color: "black";
 }
 #btnRegister{
-   -fx-background-color: "blue";
+   -fx-background-color: "orange";
    -fx-text-fill: "white";
 }
+.label{
+    -fx-text-fill:"white";
+}
 #registrar{
-    -fx-text-fill:"black";
+    -fx-text-fill:"white";
     -fx-underline: true;
 }

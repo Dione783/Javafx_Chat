@@ -1,5 +1,13 @@
+@font-face{
+    font-family: "Chalkduster";
+    src: url("../fonts/Chalkduster.ttf");
+}
+.mainFxmlClass {
+    -fx-font-family: 'Chalkduster';
+}
 #AnchorPane{
-    -fx-background-color: "#7e21ce";
+    -fx-background-color: "black";
+    -fx-text-fill: "white";
 }
 #btn{
    -fx-background-color: "blue";

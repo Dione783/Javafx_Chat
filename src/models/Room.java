@@ -3,17 +3,31 @@ package models;
 import java.util.Map;
 
 public class Room {
-    private Map<Integer,User> participants;
-    
-    public void addParticipant(int idUser,User user){
-        participants.put(idUser,user);
+    private Map<Integer,Message> messages;
+    private int id;
+    private String name;
+
+    public Map<Integer, Message> getMessages() {
+        return messages;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
     }
     
-    public void addParticipant(Map<Integer,User> allParticipants){
-        participants.putAll(allParticipants);
+    public void setId(int id){
+        this.id=id;
+    }
+
+    public void setMessages(Message message) {
+        this.messages.put(message.getMessageId(),message);
     }
     
-    public Map<Integer,User> getParticipants(){
-        return participants;
+    public void setAllMessages(Map<Integer,Message> messages){
+        this.messages=messages;
     }
 }
